@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+<script src="./jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <style>
+    .con{
+        width: 150px;
+        height: 200px;
+        border-radius: 5px;
+        background-color: rgb(58, 58, 61);
+        margin: 0 auto;
+        text-align: center;
+    }
+    .div{
+        width: 142px;
+        height: 40px;
+        border-radius: 2px;
+        background-color: rgb(214, 214, 214);
+    }
+    .t{
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: rgb(212, 214, 216);
+        cursor: pointer;
+    }
+    .dis{
+        display: inline-block;
+    }
+    .clear{
+        color: red;
+    }
+    .e{
+        margin: 5px auto;
+    }
+    .f{
+        margin: 5px 3px;
+    }
+    .equ{
+        margin-left: 80px;
+    }
+    .c{
+    
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: rgb(212, 214, 216);
+        cursor: pointer;
+    }
+</style>
+    <div class="con">
+        
+        <input class="div" type="text">
+        <button class="t f dis one">1</button>
+        <button class="t f dis two">2</button>
+        <button class="t f dis three">3</button>
+        
+        <button class="c f clear">C</button>
+        <br>
+        <button class="t f dis five">4</button>
+        <button class="t f dis six">5</button>
+        <button class="t f dis seven">6</button>
+        <button class="t f dis eight">-</button>
+        <br>
+        <button class="t f dis nine">7</button>
+        <button class="t f dis zero">8</button>
+        <button class="t f dis plus ">9</button>
+        <button class="t f dis my"  >+</button>
+        <br>
+        <button class="t  dis zero  ">0</button>
+        
+        
+        <button class="t f dis equ">=</button>
+    </div>
+
+</body>
+<script>
+        $(".t").on({
+            click : function () {
+                var btnVal = $(this).text()
+                 var newVal;
+                if (btnVal == '='){
+                    newVal = eval($("input").val())
+                }else{
+                    newVal = $("input").val() + btnVal
+                }
+
+                $("input").val(newVal)
+
+            }
+        })
+
+        
+        $(".clear").on({
+            click : function () {
+                $("input").val("")
+            }
+        })
+</script>
+</html>
