@@ -1,0 +1,345 @@
+<html lang="fa" dir="rtl"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <header>
+        <div class="basket" onmouseenter="display()" >
+            <span>سبد خرید</span>
+            <span class="elem"><</span>
+            <span class="counter">0</span>
+        
+        
+        </div>
+    <div class="ulsf" onmouseleave="displayback()">
+        <ul>
+            
+        </ul>
+        </div>
+    </header>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+                <img src="./images/والیبال.jpg" alt="">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque aspernatur repudiandae eos itaque
+                    animi
+                    beatae nostrum minus provident perferendis. Reiciendis velit dolores quos sapiente minima
+                    voluptatibus
+                    placeat molestiae sunt tempora?
+                </p>
+                <button id="p-1">خرید</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+                <img src="./images/فوتبال.jpg" alt="">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque aspernatur repudiandae eos itaque
+                    animi
+                    beatae nostrum minus provident perferendis. Reiciendis velit dolores quos sapiente minima
+                    voluptatibus
+                    placeat molestiae sunt tempora?
+                </p>
+                <button id="p-2">خرید</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+                <img src="./images/تنیس.jpg" alt="">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque aspernatur repudiandae eos itaque
+                    animi
+                    beatae nostrum minus provident perferendis. Reiciendis velit dolores quos sapiente minima
+                    voluptatibus
+                    placeat molestiae sunt tempora?
+                </p>
+                <button id="p-3">خرید</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+                <img src="./images/بسکتبال.jpg" alt="">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque aspernatur repudiandae eos itaque
+                    animi
+                    beatae nostrum minus provident perferendis. Reiciendis velit dolores quos sapiente minima
+                    voluptatibus
+                    placeat molestiae sunt tempora?
+                </p>
+                <button id="p-4">خرید</button>
+            </div>
+        </div>
+    </div>
+        <style>
+            .container{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 18rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 8px;
+    overflow: hidden;
+    margin: 4px 8px;
+}
+
+.card-body{
+    padding: 1rem;
+}
+
+button{
+    padding: 4px 0.5rem;
+    border: unset;
+    border-radius: 5px;
+    background-color: rgb(94, 132, 255);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: purple;
+    border-color: rgb(220, 0, 220);
+    box-shadow: 0 0 6px;
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+.card-header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    /* background-color: orange; */
+    background: -webkit-linear-gradient(120deg, blue, purple);
+}
+
+.card-body img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -73px;
+    border-radius: 50%;
+    box-shadow: 0px -2px 6px black;
+    width: 100px;
+    height: 100px;
+}
+
+header{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+header div{
+    display: flex;
+}
+
+header .counter{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    color: white;
+    background-color: rgb(248, 70, 70);
+}
+ul{
+    list-style: none;
+    width: 100px;
+    height: 200px;
+    display: flex;
+    gap: 1.5rem;
+}
+.ulsf{
+    width: 540px;
+    height: 700px;
+    z-index: 1;
+    display: none;
+    background-color: rgb(244, 239, 239);
+    border-radius: 20px;
+    
+}
+img{
+    width: 100px;
+}
+.container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card{
+    width: 18rem;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: 0 0 8px;
+    overflow: hidden;
+    margin: 4px 8px;
+}
+
+.card-body{
+    padding: 1rem;
+}
+
+button{
+    padding: 4px 0.5rem;
+    border: unset;
+    border-radius: 5px;
+    background-color: rgb(94, 132, 255);
+    color: white;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: purple;
+    border-color: rgb(220, 0, 220);
+    box-shadow: 0 0 6px;
+}
+
+.card-header{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    /* background-color: orange; */
+    background: -webkit-linear-gradient(120deg, blue, purple);
+}
+
+.card-body img {
+    display: block;
+    margin: 0 auto;
+    margin-top: -73px;
+    border-radius: 50%;
+    box-shadow: 0px -2px 6px black;
+    width: 100px;
+    height: 100px;
+}
+
+header{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+header div{
+    display: flex;
+}
+header{
+    padding: 10 70px;
+}
+
+header .counter{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 4px;
+    color: white;
+    background-color: rgb(248, 70, 70);
+}
+.elem{
+    transform: rotate(90deg);
+    margin: 0 10px;
+    font-size: 0.6rem;
+    font-weight: 1000;
+}
+.basket{
+    width: 110px;
+    cursor: pointer;
+}
+ul img{
+    border-radius: 10px;
+}
+
+
+        </style>
+        <script src="real.js"></script>
+
+        <script>
+            function display() {
+                $(".ulsf").css({
+                    display : "flex",
+                    
+                })
+            }
+            function displayback() {
+               $(".ulsf").css("display" , "none")
+            }
+            $('button').on({
+                click: function () {
+                    /**
+                     * changing counter
+                     */
+                    
+            var side = document.querySelector(".ulsf")
+
+                    
+                    var id = $(this).attr('id')
+
+
+                    /**
+                     * updating cart list
+                     */
+                    
+                    var src = $(this).parent().find('img').attr('src')
+
+                    if ($(this).text() == 'خرید') {
+                        $('ul').append(`<li id="list-${id}">
+                                <img src="${src}" />
+                                <span onclick="$(this).parent().remove();counter_updater('${id}')">X</span>
+                            </li>`)
+                            
+                    }else{
+                        $(`#list-${id}`).remove()
+                    }
+
+                    counter_updater($(this))
+
+                }
+
+            })
+
+            function counter_updater(btn) {
+                var counter = parseInt($('.counter').text())
+                var button = btn
+                var btn_text;
+
+                if (typeof (btn) == 'string') {
+                    button = $('#' + btn)
+                    btn_text = $('#' + btn).text()
+
+                } else {
+                    btn_text = btn.text();
+                }
+
+                if (btn_text == 'خرید') {
+                    $('.counter').text(counter + 1)
+                    button.text('حذف از سبد')
+                } else {
+
+                    if (counter > 0) {
+                        $('.counter').text(counter - 1)
+                        button.text('خرید')
+                    }
+                }
+            }
+            
+            
+        </script>
+
+
+</body></html>
